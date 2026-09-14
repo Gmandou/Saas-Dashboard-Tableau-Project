@@ -2,14 +2,14 @@
 
 ## The Project
  
-Two Tableau dashboards built on a synthetic SaaS subscription dataset (RavenStack), looking at overall business health and, more specifically, why customers churn.
+Two Tableau dashboards built on a SaaS subscription dataset (RavenStack), looking at overall business health and, more specifically, why customers churn.
  
 **Live dashboards:**
 - [SaaS Subscription Dashboard (Overview)](https://public.tableau.com/views/SaasSubscriptiondashboard/SaasSubscriptionDashboard?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 - [Churn Dashboard](https://public.tableau.com/views/SaasChurnDashboard/ChurnDashboard?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 ## Dataset
  
-I used the RavenStack synthetic SaaS dataset found in kaggle created by River @ Rivalytics — a fictional stealth-mode SaaS startup with accounts, subscriptions, and churn data.
+I used the RavenStack SaaS dataset found in kaggle created by River @ Rivalytics — a fictional stealth-mode SaaS startup with accounts, subscriptions, and churn data.
  
 I used three of the five available tables:
 - `accounts` — one row per customer, with plan tier, industry, country, signup date, referral source
@@ -25,7 +25,8 @@ I left out `support_tickets` and `feature_usage` to keep the project focused —
 - Active Users by Plan Tier (bar chart)
 - Active Users by Country (map)
 - Filters: Plan Tier, Industry, Signup Date range, Country
-**Finding:** 500 total accounts generating $11.3M MRR (~$136.1M ARR). Pro is the most popular plan tier, followed by Basic and Enterprise. Signups fluctuated month to month but trended upward overall.
+  
+**Finding:** 500 total accounts generating 11.3M MRR (136.1M ARR). Pro is the most popular plan tier, followed by Basic and Enterprise. Signups fluctuated month to month but trended upward overall.
  
 ## Page 2: Churn Dashboard
  
@@ -35,6 +36,7 @@ I left out `support_tickets` and `feature_usage` to keep the project focused —
 - Downgrade Before Churn (pie chart)
 - Churn by Industry (bar chart)
 - Filters: Plan Tier, Industry, Signup Date range, Country
+  
 **Key findings:**
 - Features are the top reason customers leave — ahead of budget, support, and pricing (pricing is actually the *lowest* reason, which surprised me since it's often assumed to be the biggest driver of churn).
 - Churn from Pro tier accounts is the highest, followed by Enterprise, then Basic.
